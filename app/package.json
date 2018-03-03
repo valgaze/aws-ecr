@@ -1,0 +1,19 @@
+{
+  "name": "namegame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm i && node server"
+  },
+  "keywords": [
+    "docker",
+    "AWS",
+    "ECR"
+  ],
+  "author": "Victor Algaze",
+  "license": "ISC",
+  "dependencies": {
+    "random-name": "^0.1.2"
+  }
+}

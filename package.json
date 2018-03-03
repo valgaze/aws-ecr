@@ -1,0 +1,24 @@
+{
+  "name": "aws-ecr",
+  "version": "1.0.0",
+  "description": "AWS ECR 101-- Elastic Container Registry basics",
+  "main": "index.js",
+  "scripts": {
+    "build_image": "docker build -t namegame .",
+    "create_container": "docker create --name namegame_container -p 8000:8000 namegame",
+    "start_container": "docker start namegame_container && echo starting container namegame_container...",
+    "kill": "docker rm -f namegame_container",
+    "killall": "npm run kill && docker -f rmi namegame"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valgaze/aws-ecr.git"
+  },
+  "keywords": [],
+  "author": "Victor Algaze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valgaze/aws-ecr/issues"
+  },
+  "homepage": "https://github.com/valgaze/aws-ecr#readme"
+}
